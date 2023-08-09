@@ -37,6 +37,12 @@ export class AppComponent {
       new Answer('Button'),
       new Answer('Clock'),
       new Answer('Pen clicking')
+    ]),
+    new MusicQuestions('pasta', [
+      new Answer('Rain'),
+      new Answer('Pasta', true),
+      new Answer('Mud'),
+      new Answer('Water')
     ])
   ];
 
