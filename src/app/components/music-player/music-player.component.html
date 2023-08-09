@@ -1,0 +1,15 @@
+<button (click)="togglePlay()">
+  <ng-container *ngIf="isPlaying; else playIcon">
+    <!-- SVG for Stop Icon -->
+    <svg width="36" height="36" viewBox="0 0 36 36">
+      <rect width="36" height="36" fill="black"></rect>
+    </svg>
+  </ng-container>
+
+  <ng-template #playIcon>
+    <!-- SVG for Play Icon -->
+    <svg width="36" height="36" viewBox="0 0 36 36">
+      <path fill="black" d="M4 4L32 18L4 32V4z"></path>
+    </svg>
+  </ng-template>
+</button>

@@ -1,0 +1,29 @@
+.main-container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.answer-btn {
+  border-radius: 2rem;
+  border: 1px solid #000;
+  padding: 0.5rem 2rem;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: background-color 1s ease;
+
+  &.correct {
+    background-color: #6de06d;
+  }
+
+  &.incorrect {
+    background-color: #e06d6d;
+  }
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 60rem;
+}

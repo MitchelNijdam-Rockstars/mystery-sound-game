@@ -1,0 +1,16 @@
+<div class="main-container">
+
+  <h1>Mystery Sound Game</h1>
+
+
+  <music-player [assetLocation]="currentQuestion.assetLocation"></music-player>
+
+  <div class="btn-container">
+    <button *ngFor="let answer of currentQuestion.answers" (click)="checkAnswer(answer)"
+            class="answer-btn btn btn-primary"
+            [class.correct]="answer.isChosen &&answer.isCorrect"
+            [class.incorrect]="answer.isChosen && !answer.isCorrect">
+      {{answer.text}}
+    </button>
+  </div>
+</div>
