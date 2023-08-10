@@ -43,6 +43,23 @@ export class AppComponent {
       new Answer('Pasta', true),
       new Answer('Mud'),
       new Answer('Water')
+    ]),
+    new MusicQuestions('lighter', [
+      new Answer('Match'),
+      new Answer('Lighter', true),
+      new Answer('WD-40')
+    ]),
+    new MusicQuestions('doorlock', [
+      new Answer('Marbles'),
+      new Answer('Bike chain'),
+      new Answer('Chainsaw'),
+      new Answer('Door lock', true)
+    ]),
+    new MusicQuestions('toilet', [
+      new Answer('Toilet', true),
+      new Answer('Storm'),
+      new Answer('Washing machine'),
+      new Answer('Waterfall')
     ])
   ];
 
